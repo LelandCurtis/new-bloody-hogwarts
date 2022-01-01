@@ -13,7 +13,7 @@ RSpec.describe 'students show page' do
   end
 
   it "displays all the courses of the chosen student" do
-    visit '/students/1'
+    visit "/students/#{@student_1.id}"
     expect(page).to have_content('Herbology')
     expect(page).to have_content('Defense against the Dark Arts')
     expect(page).to_not have_content('Potions')
