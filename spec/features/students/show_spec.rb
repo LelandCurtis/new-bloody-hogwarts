@@ -8,8 +8,8 @@ RSpec.describe 'students show page' do
     @course_2 = Course.create!(name: 'Defense against the Dark Arts')
     @course_3 = Course.create!(name: 'Potions')
 
-    student_course_1 = StudentCourse.create!(student_id: @student_1.id, course_id: @course_1.id)
-    student_course_1 = StudentCourse.create!(student_id: @student_1.id, course_id: @course_2.id)
+    @student_course_1 = StudentCourse.create!(student_id: @student_1.id, course_id: @course_1.id)
+    @student_course_2 = StudentCourse.create!(student_id: @student_1.id, course_id: @course_2.id)
   end
 
   it "displays all the courses of the chosen student" do

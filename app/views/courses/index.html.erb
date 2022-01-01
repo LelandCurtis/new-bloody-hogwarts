@@ -1,0 +1,7 @@
+<h1>Courses Index</h1>
+
+<% @courses.each do |course| %>
+  <div class=<%= "course_#{course.id}" %>>
+    <p><%= "#{course.name}: #{course.student_count}" %></p>
+  </div>
+<% end %>
