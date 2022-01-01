@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'students index page' do
   before :each do
     @student_1 = Student.create!(name: 'Harry', age: 10, house: 'Griff')
-    @student_1 = Student.create!(name: 'Malfoy', age: 11, house: 'Slytherin')
-    @student_1 = Student.create!(name: 'Ron', age: 12, house: 'Griff')
+    @student_2 = Student.create!(name: 'Malfoy', age: 11, house: 'Slytherin')
+    @student_3 = Student.create!(name: 'Ron', age: 12, house: 'Griff')
   end
   it 'lists all students with name, age and house' do
     visit '/students'
