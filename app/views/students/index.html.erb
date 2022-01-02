@@ -1,5 +1,5 @@
 <h1>Students Index</h1>
-
+<p><%= "Average Age: #{@students.avg_age}" %></p>
 <% @students.each do |student| %>
   <p><%= "Name: #{student.name}, Age: #{student.age}, House: #{student.house}" %></p>
 <% end %>
